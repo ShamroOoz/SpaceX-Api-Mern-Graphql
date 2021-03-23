@@ -1,0 +1,61 @@
+import { gql } from "@apollo/client";
+
+export const GET_LAUNCHES = gql`
+  query {
+    launches {
+      id
+      flight_number
+      name
+      details
+      launch_year
+      date_local
+      success
+      rocket {
+        id
+      }
+    }
+  }
+`;
+export const GET_LAUNCH = () => {
+  return gql`
+    query {
+      launch(Launch_id: "5eb87cd9ffd86e000604b32a") {
+        id
+        flight_number
+        name
+        details
+        launch_year
+        date_local
+        success
+        rocket {
+          id
+        }
+      }
+    }
+  `;
+};
+
+export const GET_Rockets = gql`
+  query {
+    rockets {
+      id
+      name
+      country
+      type
+      description
+    }
+  }
+`;
+export const GET_Rocket = (id) => {
+  return gql`
+    query {
+      rocket(rocket_id: id) {
+        id
+        name
+        country
+        type
+        description
+      }
+    }
+  `;
+};

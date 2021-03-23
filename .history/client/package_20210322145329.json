@@ -1,0 +1,32 @@
+{
+  "name": "react_webpack_app",
+  "version": "1.0.0",
+  "description": "React webpack SpaceX Api aPP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SHAMROZ",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.20.3",
+    "node-sass": "^4.9.2",
+    "postcss-loader": "^2.1.6",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11"
+  }
+}

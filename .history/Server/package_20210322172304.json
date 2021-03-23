@@ -1,0 +1,30 @@
+{
+  "name": "mernspacex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon --exec babel-node  index.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "apollo-server": "^2.21.2",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "graphql": "^15.5.0"
+  }
+}
